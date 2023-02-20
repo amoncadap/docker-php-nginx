@@ -1,11 +1,7 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
+FROM python:3.8-slim
 
-app = FastAPI()
+RUN pip install --no-cache-dir fastapi uvicorn
 
-class Data(BaseModel):
-    msg: str
+COPY main.py /
 
-@app.post("/")
-def handle_post(data: Data):
-    return data
+CMD uvicorn --host 0.0.0.0 --port 8080 main:app
