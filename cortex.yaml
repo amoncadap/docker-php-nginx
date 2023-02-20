@@ -1,0 +1,6 @@
+- name: hello-world
+  kind: RealtimeAPI
+  pod:
+    containers:
+    - name: api
+      image: 860557280442.dkr.ecr.us-east-1.amazonaws.com/hello-world
