@@ -3,4 +3,4 @@
   pod:
     containers:
     - name: api
-      image: 860557280442.dkr.ecr.us-east-1.amazonaws.com/projectz
+      image: 860557280442.dkr.ecr.us-east-1.amazonaws.com/projecty
