@@ -9,4 +9,4 @@ class Data(BaseModel):
 
 @app.post("/")
 def handle_post(data: Data):
-    return "este es un cambio" + data
+    return "este es un cambio"
